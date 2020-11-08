@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="moonshadow.js"></script>
+  <link rel="stylesheet" href="moonstyle.css">
+  <title>Sailor Moon Makeup Generator</title>
+</head>
+<body>
+  <h1>Sailor Moon x ColourPop Makeup Generator</h1>
+  <h3>Randomly chooses a combo from the eyeshadow palette</h3>
+  <div id="formDiv">
+  <form name="selectionForm" id="selectionForm">
+    <div id="radioDiv">
+    <p>Choose how many colors you'd like to use:</p>
+	<label>One</label>
+    <input type="radio" name="numColors" value="1"> <br>
+	<label>Two</label>
+	<input type="radio" name="numColors" value="2" checked><br>
+	<label>Three</label>
+	<input type="radio" name="numColors" value="3"><br>
+	<label>Four</label>
+	<input type="radio" name="numColors" value="4"><br>
+	<br>
+	</div>
+	<div id="btnDiv">
+	  <input type="submit" name="transformBtn" id="transformBtn" class="transformBtn" onclick="transform();return false;" value="Moon Prism Power Make Up!">
+	</div>
+  </form>
+  </div>
+  <div id="transformationDiv"></div>
+</body>
+</html>

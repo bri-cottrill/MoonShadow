@@ -1,0 +1,110 @@
+body {
+	background: #FBA5B4; /*Soft pink.*/
+	background-image: url('usagi.jpg');
+	font-family:"Adobe Caslon Pro", Georgia, "Times New Roman", serif;
+	font-size: 100%;
+}
+
+h1, h3 {
+	text-align:center;
+	color: #FFFFFF; /*White*/
+}
+
+#formDiv {
+	background: #FBA5B4;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom:5%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: solid 1px #FFFFFF;
+	border-radius:25px;
+}
+
+#transformationDiv {
+	background: #FDD4DB; /*Very light pink.*/
+	text-align:center;
+	font-size:2em;
+	border-radius:25px;
+}
+
+#transformBtn {
+	background-color: #FFB53A;
+    border: solid 1px #FFFFFF;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+	white-space:normal;	
+	
+	background-image: url('brooch_outer.png');
+	background-size: cover; 
+}
+
+#transformBtn:hover {
+	background-image: url('brooch_inner.jpg');	
+	background-size: cover;
+}
+
+
+
+
+
+/*For mobile devices*/
+@media screen and (max-width:480px){
+	#formDiv {
+		width: 70%;
+		padding: 5%
+	}
+	#selectionForm {
+	    width: 80%;
+	    margin-left:10%;
+		margin-right:10%;
+    }
+    #transformBtn {
+	    font-size: 1em;	
+		width: 80%;
+	    border-radius:50%;
+	    white-space:normal;
+		padding:20%;
+		margin-left:12.5%;
+		margin-right:12.5%;
+    }
+	#transformationDiv{
+		width: 80%;
+	    margin-left:10%;
+	    margin-right:10%;
+	}
+}
+
+@media screen and (min-width:481px){
+	#formDiv{
+		width: 80%;
+		height:200px;
+		padding:2%;	
+	}
+	#selectionForm {
+	    width: 30%;
+	    margin-left:25%;
+	
+    }
+	#radioDiv{
+		float:left;
+		width:50%;
+	}
+	#btnDiv{
+		width:50%;
+		margin-left:80%;
+		padding:5%;
+	}
+	#transformationDiv{
+		width: 50%;
+	    margin-left:25%;
+	    margin-right:25%;
+	}
+	#transformBtn{
+		padding:18%;
+		font-size: 1.5em;
+		width: 100%;
+	    border-radius:50%;	
+	}
+}
